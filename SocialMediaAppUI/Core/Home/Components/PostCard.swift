@@ -62,9 +62,11 @@ struct PostCard: View {
                 HStack {
                     Text("@\(post.username) ")
                         .bold()
-                        .font(.footnote) +
+                        .font(.footnote)
                         Text(post.description)
                         .font(.footnote)
+                        .lineLimit(1)
+                        .truncationMode(.tail)
                 }
             }          .padding(.horizontal, 10)
 
