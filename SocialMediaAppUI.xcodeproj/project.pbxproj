@@ -6,14 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F55025522D140A4F00A51F4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F55025492D140A4F00A51F4D /* Preview Assets.xcassets */; };
+		F55025532D140A4F00A51F4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F550254D2D140A4F00A51F4D /* Assets.xcassets */; };
+		F55025562D140A4F00A51F4D /* SocialMediaAppUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55025502D140A4F00A51F4D /* SocialMediaAppUIApp.swift */; };
+		F550256A2D140AE300A51F4D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55025692D140AE300A51F4D /* Story.swift */; };
+		F550256E2D140B2600A51F4D /* ExampleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F550256D2D140B2600A51F4D /* ExampleService.swift */; };
+		F55025722D1411EF00A51F4D /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55025712D1411EF00A51F4D /* Post.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F550252C2D14095300A51F4D /* SocialMediaAppUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialMediaAppUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F55025492D140A4F00A51F4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F550254D2D140A4F00A51F4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F55025502D140A4F00A51F4D /* SocialMediaAppUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaAppUIApp.swift; sourceTree = "<group>"; };
+		F55025692D140AE300A51F4D /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		F550256D2D140B2600A51F4D /* ExampleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleService.swift; sourceTree = "<group>"; };
+		F55025712D1411EF00A51F4D /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F550252E2D14095300A51F4D /* SocialMediaAppUI */ = {
+		F55025572D140A5C00A51F4D /* Home */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SocialMediaAppUI;
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +47,7 @@
 		F55025232D14095300A51F4D = {
 			isa = PBXGroup;
 			children = (
-				F550252E2D14095300A51F4D /* SocialMediaAppUI */,
+				F55025512D140A4F00A51F4D /* SocialMediaAppUI */,
 				F550252D2D14095300A51F4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,84 @@
 				F550252C2D14095300A51F4D /* SocialMediaAppUI.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F55025452D140A4F00A51F4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F55025502D140A4F00A51F4D /* SocialMediaAppUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F55025462D140A4F00A51F4D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F55025572D140A5C00A51F4D /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F55025472D140A4F00A51F4D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F55025482D140A4F00A51F4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F55025692D140AE300A51F4D /* Story.swift */,
+				F55025712D1411EF00A51F4D /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F550254A2D140A4F00A51F4D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F55025492D140A4F00A51F4D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F550254B2D140A4F00A51F4D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F550254D2D140A4F00A51F4D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F550254C2D140A4F00A51F4D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F55025512D140A4F00A51F4D /* SocialMediaAppUI */ = {
+			isa = PBXGroup;
+			children = (
+				F55025452D140A4F00A51F4D /* App */,
+				F55025462D140A4F00A51F4D /* Core */,
+				F55025472D140A4F00A51F4D /* Extensions */,
+				F55025482D140A4F00A51F4D /* Models */,
+				F550254A2D140A4F00A51F4D /* Preview Content */,
+				F550254B2D140A4F00A51F4D /* Resources */,
+				F550256C2D140B1600A51F4D /* Services */,
+				F550254C2D140A4F00A51F4D /* Utils */,
+			);
+			path = SocialMediaAppUI;
+			sourceTree = "<group>";
+		};
+		F550256C2D140B1600A51F4D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F550256D2D140B2600A51F4D /* ExampleService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,7 +154,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F550252E2D14095300A51F4D /* SocialMediaAppUI */,
+				F55025572D140A5C00A51F4D /* Home */,
 			);
 			name = SocialMediaAppUI;
 			packageProductDependencies = (
@@ -109,6 +202,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55025522D140A4F00A51F4D /* Preview Assets.xcassets in Resources */,
+				F55025532D140A4F00A51F4D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +214,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55025562D140A4F00A51F4D /* SocialMediaAppUIApp.swift in Sources */,
+				F550256E2D140B2600A51F4D /* ExampleService.swift in Sources */,
+				F55025722D1411EF00A51F4D /* Post.swift in Sources */,
+				F550256A2D140AE300A51F4D /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
